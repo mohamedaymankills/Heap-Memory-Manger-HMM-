@@ -1,3 +1,9 @@
+/**************** Author  : Mohamed Ayman *****************/
+/**************** Name    : hmm_fixed.c   *****************/
+/**************** Version : 0.0.1         *****************/
+/**************** Date    : 12-8-2024     *****************/
+
+
 #include <stdio.h>
 #include <stddef.h>
 #include <stdint.h>
