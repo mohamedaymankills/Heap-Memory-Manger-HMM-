@@ -63,10 +63,67 @@ int main() {
 - Optimize memory management strategies for fragmentation and coalescing free blocks.
 - Implement a more sophisticated memory allocation algorithm (e.g., best fit, first fit).
 
-## License
+## HMM Fixed Flowchart
 
-This project is open-source and available under the [MIT License](LICENSE).
++-------------------+
+|       Start       |
++-------------------+
+         |
+         v
++-------------------+
+|   Define HEAP     |
++-------------------+
+         |
+         v
++-------------------+
+|  Initialize heap  |
++-------------------+
+         |
+         v
++-------------------+
+| Initialize program|
+|      break        |
++-------------------+
+         |
+         v
++-------------------+
+|  Define Struct    |
++-------------------+
+         |
+         v
++-------------------+
+| Initialize free_list |
++-------------------+
+         |
+         v
++-------------------+
+| Define HmmAlloc   |
++-------------------+
+         |
+         v
++---------------------------+
+|  size == 0 ? Return NULL  |
++---------------------------+
+         |
+         v
++-----------------------------+
+| Align size & Find free block|
++-----------------------------+
+         |
+         +---------+---------+
+         |                   |
+         v                   v
++-------------------+  +--------------------+
+| Block Found?      |  | No Block Found?    |
+| Set as Allocated  |  | Return NULL        |
++-------------------+  +--------------------+
+         |
+         v
++-------------------+
+| Return Pointer    |
++-------------------+
+
 
 ## Author
 
-Mohamed
+Mohamed Ayman
