@@ -64,7 +64,7 @@ int main() {
 - Implement a more sophisticated memory allocation algorithm (e.g., best fit, first fit).
 
 ## HMM Fixed Flowchart
-
+```
 +-------------------+
 |       Start       |
 +-------------------+
@@ -122,7 +122,7 @@ int main() {
 +-------------------+
 | Return Pointer    |
 +-------------------+
-
+```
 
 ## Author
 
