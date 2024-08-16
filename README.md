@@ -64,7 +64,8 @@ int main() {
 - Implement a more sophisticated memory allocation algorithm (e.g., best fit, first fit).
 
 ## HMM Fixed Flowchart
-![1](https://github.com/mohamedaymankills/Heap-Memory-Manger-HMM-/tree/main/Readme_Screenshots)
+
+![1](https://github.com/mohamedaymankills/Heap-Memory-Manger-HMM-/blob/main/Readme_Screenshots/Fixed.png?raw=true)
 
 ```sql
 +-------------------+
