@@ -183,6 +183,85 @@ int main() {
 |        End        |
 +-------------------+
 ```
+
+## HMM Reduced Flowchart
+
+``` sql
++------------------------+
+|         Start          |
++------------------------+
+         |
+         v
++------------------------+
+| Initialize Constants   |
++------------------------+
+         |
+         v
++------------------------+
+| Initialize Variables   |
++------------------------+
+         |
+         v
++------------------------+
+|      HmmAlloc()        |
+| 1. Size check          |
+| 2. Align size          |
+| 3. Find free block     |
+| 4. Allocate & return   |
++------------------------+
+         |
+         v
++------------------------+
+|      HmmFree()         |
+| 1. Null check          |
+| 2. Mark block as free  |
+| 3. Add to free list    |
+| 4. Merge free blocks   |
++------------------------+
+         |
+         v
++------------------------+
+|   find_free_block()    |
+| 1. Traverse free list  |
+| 2. Return block        |
+| 3. Extend heap         |
+| 4. Split if necessary  |
++------------------------+
+         |
+         v
++------------------------+
+|     split_block()      |
+| 1. Split large block   |
+| 2. Add to free list    |
++------------------------+
+         |
+         v
++------------------------+
+|  add_to_free_list()    |
++------------------------+
+         |
+         v
++------------------------+
+| merge_free_blocks()    |
++------------------------+
+         |
+         v
++------------------------+
+|        main()          |
+| 1. Allocate 256 KB     |
+| 2. Allocate 128 KB     |
+| 3. Free 256 KB         |
+| 4. Allocate 64 KB      |
+| 5. Print addresses     |
++------------------------+
+         |
+         v
++------------------------+
+|          End           |
++------------------------+
+```
+
+
 ## Author
 
 Mohamed Ayman
