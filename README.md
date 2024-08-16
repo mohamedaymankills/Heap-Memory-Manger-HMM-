@@ -64,7 +64,7 @@ int main() {
 - Implement a more sophisticated memory allocation algorithm (e.g., best fit, first fit).
 
 ## HMM Fixed Flowchart
-!(1)[https://github.com/mohamedaymankills/Heap-Memory-Manger-HMM-/tree/main/Readme_Screenshots]
+![1](https://github.com/mohamedaymankills/Heap-Memory-Manger-HMM-/tree/main/Readme_Screenshots)
 
 ```sql
 +-------------------+
@@ -129,7 +129,7 @@ int main() {
 
 ## HMM Random Flowchart 
 
-!(2)[https://github.com/mohamedaymankills/Heap-Memory-Manger-HMM-/blob/main/Readme_Screenshots/Random.png]
+![2](https://github.com/mohamedaymankills/Heap-Memory-Manger-HMM-/blob/main/Readme_Screenshots/Random.png)
 
 ``` sql
 +-------------------+
@@ -189,7 +189,7 @@ int main() {
 ```
 
 ## HMM Reduced Flowchart
-!(3)[https://github.com/mohamedaymankills/Heap-Memory-Manger-HMM-/blob/main/Readme_Screenshots/Reduced.png]
+![3](https://github.com/mohamedaymankills/Heap-Memory-Manger-HMM-/blob/main/Readme_Screenshots/Reduced.png)
 
 ``` sql
 +------------------------+
