@@ -64,7 +64,7 @@ int main() {
 - Implement a more sophisticated memory allocation algorithm (e.g., best fit, first fit).
 
 ## HMM Fixed Flowchart
-```
+```sql
 +-------------------+
 |       Start       |
 +-------------------+
@@ -124,6 +124,65 @@ int main() {
 +-------------------+
 ```
 
+
+## HMM Random Flowchart 
+
+``` sql
++-------------------+
+|       Start       |
++-------------------+
+         |
+         v
++-------------------+
+| Define Constants  |
++-------------------+
+         |
+         v
++-------------------------+
+| Declare External Functions |
++-------------------------+
+         |
+         v
++-------------------+
+| Seed RNG          |
++-------------------+
+         |
+         v
++-------------------+
+| Initialize Array  |
++-------------------+
+         |
+         v
++--------------------------+
+| Perform NUM_ALLOCATIONS  |
++--------------------------+
+         |
+         v
++------------------------------+
+| Random Action (Allocate/Free)|
++------------------------------+
+         |
+   +-----------+---------------+
+   |                           |
+   v                           v
++-------------------+   +-------------------+
+|   Allocate Memory |   |   Free Memory     |
+|                   |   |                   |
+| Generate Size     |   | Select Index      |
+| Call HmmAlloc     |   | If valid, free    |
+| Store/Print Info  |   | Print/Set NULL    |
++-------------------+   +-------------------+
+         |
+         v
++--------------------------+
+| Free Remaining Allocations |
++--------------------------+
+         |
+         v
++-------------------+
+|        End        |
++-------------------+
+```
 ## Author
 
 Mohamed Ayman
