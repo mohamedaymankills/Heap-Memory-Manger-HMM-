@@ -228,7 +228,27 @@ Function Descriptions
 |        End        |
 +-------------------+
 ```
+Constants
 
+    NUM_ALLOCATIONS: The number of memory allocations to perform (100).
+    MAX_ALLOCATION_SIZE: The maximum size of each memory allocation (64KB).
+
+External Functions
+
+    void *HmmAlloc(size_t size): Allocates memory of the specified size using the custom Heap Memory Manager.
+    void HmmFree(void *ptr): Frees the previously allocated memory block.
+
+Functionality
+
+    Randomized Allocation and Deallocation:
+        The program performs 100 iterations where it randomly decides to either allocate or free memory with a 50% chance for each action.
+        If allocation is chosen, a random size between 1 and MAX_ALLOCATION_SIZE is generated, and HmmAlloc is called to allocate the memory. If successful, the allocated pointer is stored; otherwise, an error message is printed.
+        If deallocation is chosen, a random index from the allocations array is selected. If the pointer at that index is not NULL, the block is freed using HmmFree.
+
+    Memory Cleanup:
+        After the random operations, any remaining allocated memory blocks are freed to avoid memory leaks.
+
+        
 ## HMM Reduced Flowchart
 ![3](https://github.com/mohamedaymankills/Heap-Memory-Manger-HMM-/blob/main/Readme_Screenshots/Reduced.png)
 
