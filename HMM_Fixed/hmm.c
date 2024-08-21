@@ -8,7 +8,7 @@
 #include <stddef.h>
 #include <stdint.h>
 
-#define HEAP_SIZE  1024 * 1024  // Define the simulated heap size (200 MB)
+#define HEAP_SIZE 200 * 1024 * 1024  // Define the simulated heap size (200 MB)
 
 // Statically allocated array simulating the heap area
 static uint8_t heap[HEAP_SIZE];
