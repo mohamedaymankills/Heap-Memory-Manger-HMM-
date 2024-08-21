@@ -33,7 +33,7 @@ This project implements a custom Heap Memory Manager (HMM) in C, designed to pro
 To compile the project, run:
 
 ```bash
-gcc -o heap_memory_manager heap_memory_manager.c
+gcc -o hmm hmm.c
 ```
 
 ### Usage
