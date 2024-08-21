@@ -126,7 +126,28 @@ int main() {
 | Return Pointer    |
 +-------------------+
 ```
+Function Descriptions
 
+    - void *HmmAlloc(size_t size):
+        Allocates a block of memory of the specified size.
+        Returns a pointer to the allocated memory or NULL if allocation fails.
+
+    - void HmmFree(void *ptr):
+        Frees a previously allocated block of memory.
+        Adds the freed block to the free list and merges adjacent free blocks to reduce fragmentation.
+
+    - BlockHeader *find_free_block(size_t size):
+        Finds a suitable free block in the free list that can accommodate the requested size.
+        If no suitable block is found, attempts to extend the heap.
+
+    - void split_block(BlockHeader *block, size_t size):
+        Splits a larger block into two if the requested size is smaller than the block size.
+
+    - void add_to_free_list(BlockHeader *block):
+        Adds a freed block to the beginning of the free list.
+
+    - void merge_free_blocks():
+        Merges consecutive free blocks into a single larger block to reduce fragmentation.
 
 ## HMM Random Flowchart 
 
