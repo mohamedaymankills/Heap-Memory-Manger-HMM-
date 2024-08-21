@@ -126,6 +126,25 @@ int main() {
 | Return Pointer    |
 +-------------------+
 ```
+
+Data Structures
+
+    BlockHeader Structure:
+        size: Size of the allocated block (excluding the header).
+        next: Pointer to the next block in the free list.
+        free: Flag indicating if the block is free (1) or allocated (0).
+
+    Heap:
+        A statically allocated array (heap) simulates the heap space.
+        The program_break pointer simulates the program break, initially pointing to the start of the heap.
+
+Constants and Macros
+
+    HEAP_SIZE: Defines the total size of the simulated heap (200 MB).
+    HEADER_SIZE: The size of the block header.
+    ALIGN(x): Macro to align the requested size to the system’s word size.
+
+
 Function Descriptions
 
     - void *HmmAlloc(size_t size):
